@@ -21,7 +21,9 @@ Limit to 20 connections on port 80/443 per 2 seconds per IP
 -A ufw-before-input -p tcp --dport 80 -i eth0 -m state --state NEW -m recent --set
 
 -A ufw-before-input -p tcp --dport 80 -i eth0 -m state --state NEW -m recent --update --seconds 2 --hitcount 20 -j DROP
+
 -A ufw-before-input -p tcp --dport 443 -i eth0 -m state --state NEW -m recent --set
+
 -A ufw-before-input -p tcp --dport 443 -i eth0 -m state --state NEW -m recent --update --seconds 2 --hitcount 20 -j DROP
 
 
