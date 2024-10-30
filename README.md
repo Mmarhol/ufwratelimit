@@ -8,7 +8,7 @@ Usage:
 Add these lines to /etc/ufw/before.rules after
 End required lines
 Add these lines
-Start CUSTOM UFW added by clusterednetworks 2020-10-20
+
 
 Limit to 20 concurrent connections on port 80/443 per IP
 
